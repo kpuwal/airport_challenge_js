@@ -6,7 +6,7 @@
 //   an airport and confirm that it has landed
 
 describe('Feature Test', function() {
-	
+
 	var plane
 	var airport
 
@@ -22,10 +22,11 @@ describe('Feature Test', function() {
     beforeEach(function(){
       spyOn(Math,'random').and.returnValue(0);
     });
-	
+
 		it('planes can be instructed to land at an airport', function() {
 			plane.land(airport);
 			expect(airport.planes()).toContain(plane);
+			console.log('test running')
 		});
 
 
@@ -34,6 +35,8 @@ describe('Feature Test', function() {
 			plane.takeoff();
 			expect(airport.planes()).not.toContain(plane);
 		});
+
+	});
 
 
 // As an air traffic controller
