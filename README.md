@@ -1,4 +1,4 @@
-# Airport Challenge in Java Script
+# Airport Challenge in JavaScript
 
 ```
         ______
